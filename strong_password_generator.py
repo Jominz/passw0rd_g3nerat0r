@@ -17,7 +17,6 @@ length = 16
 
 password = ''
 while len(password) < length:
-    random_element = random.randrange(0, len(values))
-    password += str(values[random_element])
+    password += random.choice(values)
 print("Here your password:\n")
 print(password)
